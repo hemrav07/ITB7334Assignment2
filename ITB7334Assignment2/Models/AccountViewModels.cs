@@ -64,6 +64,22 @@ namespace ITB7334Assignment2.Models
 
     public class RegisterViewModel
     {
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "FirstName")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "LastName")]
+        public string LastName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "UserID")]
+        public string UserID { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
